@@ -20,3 +20,16 @@ sign_up_btn2.addEventListener("click", () => {
 sign_in_btn2.addEventListener("click", () => {
     container.classList.remove("sign-up-mode2");
 });
+
+function validate() {
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+    if (username=="admin" && password=="user") 
+    {
+        alert("login successfully");
+      
+    }
+    else {
+        alert("login failed");
+    }
+}
